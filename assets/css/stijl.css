@@ -1,0 +1,61 @@
+/* ALGEMEEN */
+body{
+    
+}
+
+.lijn{
+    height:20px;
+    background-color:white;
+    background-image: url(http://floriandh.sinners.be/ehab_eetcafe/assets/images/fotos/patroon2.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    margin:0px;
+    padding:0px;
+}
+
+#logo{
+    margin-left: auto;
+        margin-right:auto;
+        margin-bottom: 10px;
+        filter: drop-shadow(5px 5px 3px #222222);
+        display: block;
+}
+
+@media only screen and (min-width: 800px) {
+        .knopcentreren{
+            margin-top: 25px;
+        }
+        #banner{
+            min-height: 60vh;
+            height: 60vh;
+            padding-top: 0px;
+        }
+        #logo{
+            margin: 40px;
+            display: inline;
+        }
+        #arrow{
+            display: none;
+        }
+    }
+    
+    .btn-round {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.btn-round.btn-lg {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-round.btn-sm {
+    width: 34px;
+    height: 34px;
+}
+
+.btn-round.btn-xs {
+    width: 24px;
+    height: 24px;
+}

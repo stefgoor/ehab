@@ -1,0 +1,42 @@
+{
+    "lang": "en",
+    "dir": "ltr",    
+    "name": "Ehab eetcafé",
+    "description": "Geniet van het heerlijk aanbod dat Ehab eetcafé te bieden heeft aan huis of bij Ehab zelf",
+    "short_name": "Ehab eetcafé",
+    "icons": [{
+            "src": "assets/images/logos/icon64.webp",
+            "sizes": "64x64",
+            "type": "image/webp"
+        }, {
+            "src": "assets/images/logos/icon64.png",
+            "sizes": "64x64",
+            "type": "image/png"  
+        },
+        {  
+            "src": "assets/images/logos/icon192.png",  
+            "sizes": "192x192",  
+            "type": "image/png"  
+        },  
+        {  
+            "src": "assets/images/logos/icon256.png",  
+            "sizes": "256x256",  
+            "type": "image/png"  
+        },  
+        {  
+            "src": "assets/images/logos/icon384.png",  
+            "sizes": "384x384",  
+            "type": "image/png"  
+        },  
+        {  
+            "src": "assets/images/logos/icon512.png",  
+            "sizes": "512x512",  
+            "type": "image/png"  
+        }],
+    "scope": "/ehab_eetcafe/",
+    "start_url": "/ehab_eetcafe/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#ee1c25",
+    "background_color": "black"
+}
