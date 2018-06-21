@@ -119,5 +119,10 @@ function getTotaalPrijs($karretje) {
     }
 }
 
+function getTime() {
+    date_default_timezone_set("Europe/Brussels");
+    return date("H:i:s");
+}
+
 /* End of file notation_helper.php */
 /* Location: helpers/notation_helper.php */

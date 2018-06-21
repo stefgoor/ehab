@@ -307,6 +307,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
             <div class="contact-bar">
                 <a href="#"><i class="far fa-clock fa-fw fa-lg"></i>  Vandaag Open: 15:00 - 03:00<i class="fas fa-plus fa-fw fa-lg"></i></a>
+                <p><?php echo getTime() ?></p>
             </div>
 
         </div>
