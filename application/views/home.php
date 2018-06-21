@@ -273,42 +273,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </tr>
                     </table>
                 </div>-->
-        <div class="col-xl-2 col-lg-4 col-md-4 col-6 d-block">
-            <div class="promo-bar">
-                <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
-                <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
-            </div>
-        </div>
-        <div class="col-xl-2 col-lg-4 col-md-4 col-6 d-block">
-            <div class="promo-bar">
-                <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
-                <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
-            </div>
-        </div>
-        <div class="col-xl-2 d-none d-xl-block">
-            <div class="promo-bar">
-                <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
-                <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
-            </div>
-        </div>
-        <div class="col-xl-2 d-none d-xl-block">
-            <div class="promo-bar">
-                <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
-                <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-4 col-sm-12 col-12"  id="contactgegevens">
-            <div class="contact-bar">
-                <a href="#"><i class="far fa-clock fa-fw fa-lg"></i>  Vandaag Open: 15:00 - 03:00</a>
-            </div>
-            <div class="contact-bar">
-                <a href="#"><i class="fas fa-car fa-fw fa-lg"></i>  Geen bezorging vandaag</a>
-            </div>
+
+        <!--        Promotiebars-->
+        <!--        <div class="col-xl-2 col-lg-4 col-md-4 col-6 d-block">
+                    <div class="promo-bar">
+                        <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
+                        <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-4 col-md-4 col-6 d-block">
+                    <div class="promo-bar">
+                        <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
+                        <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block">
+                    <div class="promo-bar">
+                        <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
+                        <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
+                    </div>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block">
+                    <div class="promo-bar">
+                        <div class="text-center"><i class="fas fa-star fa-2x"></i></div>
+                        <div class="text-center"><span>Kasterlee Mix Grill<br>€ 14</span></div>
+                    </div>
+                </div>-->
+
+
+        <div class="col-xl-6 col-md-6 col-sm-12 col-12"  id="contactgegevens">
             <div class="contact-bar">
                 <a href="tel:<?php echo $contact->telefoon; ?>"><i class="fas fa-phone fa-fw fa-lg"></i>  <?php echo $contact->telefoon; ?></a>
             </div>
             <div class="contact-bar">
+                <a href="#"><i class="far fa-clock fa-fw fa-lg"></i>  Vandaag Open: 15:00 - 03:00<i class="fas fa-plus fa-fw fa-lg"></i></a>
+            </div>
+
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12 col-12"  id="contactgegevens">
+            <div class="contact-bar">
                 <a href="#maps"><i class="fas fa-map-marker-alt fa-fw fa-lg"></i>  <?php echo $contact->adres; ?></a>
+            </div>
+            <div class="contact-bar">
+                <a href="#"><i class="fas fa-car fa-fw fa-lg"></i>  Geen bezorging vandaag</a>
             </div>
         </div>
     </div>
