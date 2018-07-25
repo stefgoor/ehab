@@ -12,6 +12,12 @@ class Openingsuren_model extends CI_Model {
         $query = $this->db->get('ehab_openingsuren');
         return $query->result();
     }
+    
+    function getUrenWhereDag($dagVanDeWeek){
+        $this->db->where('id', $dagVanDeWeek);
+        $query = $this->db->get('ehab_openingsuren');
+        return $query->row();
+    }
 }
 
 ?>

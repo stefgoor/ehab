@@ -130,5 +130,12 @@ function getCurrentDate() {
     return $date;
 }
 
+function getCurrentDagVanDeWeek() {
+    date_default_timezone_set("Europe/Brussels");
+    $date = getdate();
+    $day = $date['wday'];
+    return $day;
+}
+
 /* End of file notation_helper.php */
 /* Location: helpers/notation_helper.php */
