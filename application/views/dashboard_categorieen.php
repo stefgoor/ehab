@@ -170,12 +170,12 @@ $knopToevoegen = form_button("knopToevoegen", '<i class="fas fa-plus"></i>', arr
                             $i = 1;
                             foreach ($categorieen as $categorie) {
                                 if ($categorie->heeftSaus == 1) {
-                                    $checkedsaus = '<span class="glyphicon glyphicon-tint" title = "Deze categorie bevat saus" style="font-size:24px; color:green"></span>';
+                                    $checkedsaus = '<span title = "Deze categorie bevat saus" style="font-size:24px; color:green"><i class="fas fa-tint"></i></span>';
                                 } else {
                                     $checkedsaus = '';
                                 }
                                 if ($categorie->opstartpagina == 1) {
-                                    $checkedstart = '<span class="glyphicon glyphicon-home" title = "Deze categorie staat op de startpagina" style="font-size:24px; color:green"></span>';
+                                    $checkedstart = '<span title = "Deze categorie staat op de startpagina" style="font-size:24px; color:green"><i class="fas fa-home"></i></span>';
                                 } else {
                                     $checkedstart = '';
                                 }

@@ -209,14 +209,14 @@ $knopToevoegen = form_button("knopToevoegen", '<i class="fas fa-plus"></i>', arr
                             $i = 1;
                             foreach ($producten as $product) {
                                 if ($product->vegetarisch == 1) {
-                                    $checkedvegi = '<span class="glyphicon glyphicon-leaf" title = "Dit product is vegetarisch" style="font-size:24px; color:green"></span>';
+                                    $checkedvegi = '</i><span title = "Dit product is vegetarisch" style="font-size:24px; color:green"><i class="fas fa-leaf"></span>';
                                 } else {
                                     $checkedvegi = '';
                                 }
                                 if ($product->zichtbaar == 1) {
-                                    $checkedzicht = '<span class="glyphicon glyphicon-eye-open" title = "Dit product is zichtbaar" style="font-size:24px; color:green"></span>';
+                                    $checkedzicht = '<span title = "Dit product is zichtbaar" style="font-size:24px; color:green"><i class="far fa-eye"></i></span>';
                                 } else {
-                                    $checkedzicht = '<span class="glyphicon glyphicon-eye-close" title = "Dit product is niet zichtbaar" style="font-size:24px; color:red"></span>';
+                                    $checkedzicht = '<span title = "Dit product is niet zichtbaar" style="font-size:24px; color:red"><i class="far fa-eye-slash"></i></i></span>';
                                 }
                                 echo "<td>" . $i++ . "</td><td>$product->naam</td><td>$product->beschrijving</td><td>" . $product->categorie->naam . "</td><td> " . zetOmNaarKomma($product->prijsklein) . "</td><td> " . zetOmNaarKomma($product->prijsgroot) . "</td><td>$checkedvegi</td><td>$checkedzicht</td><td>" . anchor('', $knopBewerk, array('class' => 'product', 'data-id' => $product->id)) . anchor('', $knopVerwijder, array('class' => 'verwijder', 'data-id' => $product->id)) . "</td>";
                                 echo" </tr><tr>";

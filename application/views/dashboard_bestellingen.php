@@ -272,11 +272,6 @@ $knopToevoegen = form_button("knopToevoegen", '<i class="fas fa-plus"></i>', arr
                     </div>
                 </div>
             </div>
-
-
-
         </div>
-
-
     </div>
 </div>
