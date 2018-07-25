@@ -306,8 +306,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <a href="tel:<?php echo $contact->telefoon; ?>"><i class="fas fa-phone fa-fw fa-lg"></i>  <?php echo $contact->telefoon; ?></a>
             </div>
             <div class="contact-bar">
-                <a href="#"><i class="far fa-clock fa-fw fa-lg"></i>  Vandaag Open: 15:00 - 03:00<i class="fas fa-plus fa-fw fa-lg"></i></a>
-                <p><?php print_r(getCurrentDagVanDeWeek())?></p>
+                <?php
+                    $gesloten = $currentUren->gesloten;
+                    if($gesloten == 1){
+                       echo '<p>Vandaag gesloten</p>';
+                    }
+                    else{
+                        echo '<a href="#"><i class="far fa-clock fa-fw fa-lg"></i>  Vandaag Open: ' . zetOmNaarHHMM($currentUren->beginuur) . ' - ' . zetOmNaarHHMM($currentUren->einduur) .'<i class="fas fa-plus fa-fw fa-lg"></i></a>';
+                    }
+                ?>
+                <p><?php print_r($currentUren)?></p>
             </div>
 
         </div>

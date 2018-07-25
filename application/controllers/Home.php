@@ -17,6 +17,7 @@ class Home extends CI_Controller {
         
         $this->load->model('openingsuren_model');
         $data['openingsuren'] = $this->openingsuren_model->getAll();
+        $data['currentUren'] = $this->openingsuren_model->getUrenWhereDag(getCurrentDagVanDeWeek());
         
         $this->load->model('contact_model');
         $data['contact'] = $this->contact_model->getContact();
@@ -33,8 +34,4 @@ class Home extends CI_Controller {
         $this->template->load('main_master', $partials, $data);
     }
     
-    public function geefOpeningsuren($dagVanDeWeek){
-        $this->load->model('openingsuren_model');
-        
-    }
 }
