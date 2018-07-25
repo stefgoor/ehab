@@ -119,9 +119,15 @@ function getTotaalPrijs($karretje) {
     }
 }
 
-function getTime() {
+function getCurrentTime() {
     date_default_timezone_set("Europe/Brussels");
     return date("H:i:s");
+}
+
+function getCurrentDate() {
+    date_default_timezone_set("Europe/Brussels");
+    $date = getdate();
+    return $date;
 }
 
 /* End of file notation_helper.php */
